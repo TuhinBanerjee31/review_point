@@ -10,6 +10,7 @@ import card7 from "../assets/oc-6.png";
 import card8 from "../assets/oc-7.png";
 import card9 from "../assets/oc-8.png";
 import card10 from "../assets/oc-9.png";
+import { Link } from "react-router-dom";
 
 const Info = () => {
   return (
@@ -49,126 +50,173 @@ const Info = () => {
       </h2>
 
       <div className="flex flex-wrap items-center gap-4 px-10 py-10 justify-center">
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card1} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 1
-            </h5>
+        <Link
+          to={"/kiewit-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card1} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 1
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 1 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card2} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 2
-            </h5>
+        <Link
+          to={"/siecorp-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card2} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 2
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 2 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card3} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 3
-            </h5>
+        <Link
+          to={"/vinci-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card3} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 3
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 3 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card4} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 4
-            </h5>
+        <Link
+          to={"/bechtel-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card4} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 4
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 4 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card5} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 5
-            </h5>
+        <Link
+          to={"/csc-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card5} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 5
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 5 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card6} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 6
-            </h5>
+        <Link
+          to={"/acs-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card6} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 6
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 6 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card7} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 7
-            </h5>
+        <Link
+          to={"/hochtief-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card7} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 7
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 7 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card8} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 8
-            </h5>
+        <Link
+          to={"/bouygues-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card8} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 8
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 8 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card9} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 9
-            </h5>
+        <Link
+          to={"/lt-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card9} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 9
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 9 company of the year.
           </p>
-        </div>
+        </Link>
 
-        <div className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
-            <img src={card10} alt="..." className="h-12 mx-auto" /> 
-            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-              Rank 10
-            </h5>
+        <Link
+          to={"/skanska-articles"}
+          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+        >
+          <img src={card10} alt="..." className="h-12 mx-auto" />
+          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+            Rank 10
+          </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
-            Go to this step by step guideline process on how to certify for your
-            weekly benefits:
+            Know more about our Rank 10 company of the year.
           </p>
-        </div>
+        </Link>
       </div>
+
+      <Link
+        to={"/siecorp-articles-list"}
+        className="relative flex overflow-x-hidden"
+      >
+        <div className="py-12 animate-marquee whitespace-nowrap">
+          <span className="text-4xl font-bold mx-4 uppercase tracking-wider">
+            Trending Organisation: SIECORP
+          </span>
+          <span className="text-4xl mx-4">⚫</span>
+          <span className="text-4xl mx-4 uppercase tracking-wider">
+            Click To Know More
+          </span>
+          <span className="text-4xl mx-4">⚫</span>
+        </div>
+
+        <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+          <span className="text-4xl font-bold mx-4 uppercase tracking-wider">
+            Trending Organisation: SIECORP
+          </span>
+          <span className="text-4xl mx-4">⚫</span>
+          <span className="text-4xl mx-4 uppercase tracking-wider">
+            Click To Know More
+          </span>
+          <span className="text-4xl mx-4">⚫</span>
+        </div>
+      </Link>
     </div>
   );
 };

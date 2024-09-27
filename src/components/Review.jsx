@@ -1,19 +1,20 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import card2 from "../assets/siecorp_logo.png";
 import card1 from "../assets/oc-1.png";
 import card3 from "../assets/oc-2.png";
 import card6 from "../assets/oc-5.png";
+import { UserCircleIcon } from "@heroicons/react/24/outline";
 
 const Review = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-  
+
   return (
     <div className="min-h-screen py-10">
       <h1 className="font-semibold text-5xl text-center tracking-wider mx-auto px-3">
-        Reviews
+        Testimonials
       </h1>
 
       <div className="w-full max-w-screen-xl mx-auto my-10 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
@@ -23,13 +24,12 @@ const Review = () => {
             className="divide-y divide-gray-800 dark:divide-gray-700"
           >
             <li className="py-3 sm:py-4">
-              <div className="flex items-center">
+              <div className="flex items-center md:flex-row flex-col">
                 <div className="flex-shrink-0">
-                  <img
-                    className="w-8 h-8 rounded-full"
-                    src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
-                    alt="Neil image"
-                  />
+                  <UserCircleIcon class="h-10 w-10 text-gray-500 mx-auto" />
+                  <div className="md:hidden items-center text-base font-semibold text-gray-900 dark:text-white">
+                  <img src={card2} alt="..." className="h-10" />
+                </div>
                 </div>
                 <div className="flex-1 min-w-0 ms-4">
                   <p className="text-sm font-medium text-black">Neel Sharma</p>
@@ -44,20 +44,19 @@ const Review = () => {
                     there’s a real commitment to fostering our careers.
                   </p>
                 </div>
-                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div className="hidden md:inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   <img src={card2} alt="..." className="h-10" />
                 </div>
               </div>
             </li>
 
             <li className="py-3 sm:py-4">
-              <div className="flex items-center">
+              <div className="flex items-center md:flex-row flex-col">
                 <div className="flex-shrink-0">
-                  <img
-                    className="w-8 h-8 rounded-full"
-                    src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
-                    alt="Neil image"
-                  />
+                  <UserCircleIcon class="h-10 w-10 text-gray-500 mx-auto" />
+                  <div className="md:hidden items-center text-base font-semibold text-gray-900 dark:text-white">
+                  <img src={card1} alt="..." className="h-10" />
+                </div>
                 </div>
                 <div className="flex-1 min-w-0 ms-4">
                   <p className="text-sm font-medium text-black">
@@ -72,20 +71,19 @@ const Review = () => {
                     what I do makes a difference for future generations.
                   </p>
                 </div>
-                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div className="hidden md:inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   <img src={card1} alt="..." className="h-10" />
                 </div>
               </div>
             </li>
 
             <li className="py-3 sm:py-4">
-              <div className="flex items-center">
+              <div className="flex items-center md:flex-row flex-col">
                 <div className="flex-shrink-0">
-                  <img
-                    className="w-8 h-8 rounded-full"
-                    src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
-                    alt="Neil image"
-                  />
+                  <UserCircleIcon class="h-10 w-10 text-gray-500 mx-auto" />
+                  <div className="md:hidden items-center text-base font-semibold text-gray-900 dark:text-white">
+                  <img src={card6} alt="..." className="h-10" />
+                </div>
                 </div>
                 <div className="flex-1 min-w-0 ms-4">
                   <p className="text-sm font-medium text-black">Jenny Paul</p>
@@ -96,20 +94,19 @@ const Review = () => {
                     like a family than just coworkers.
                   </p>
                 </div>
-                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div className="hidden md:inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   <img src={card6} alt="..." className="h-10" />
                 </div>
               </div>
             </li>
 
             <li className="py-3 sm:py-4">
-              <div className="flex items-center">
+              <div className="flex items-center md:flex-row flex-col">
                 <div className="flex-shrink-0">
-                  <img
-                    className="w-8 h-8 rounded-full"
-                    src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
-                    alt="Neil image"
-                  />
+                  <UserCircleIcon class="h-10 w-10 text-gray-500" />
+                  <div className="md:hidden items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <img src={card2} alt="..." className="h-10" />
+                  </div>
                 </div>
                 <div className="flex-1 min-w-0 ms-4">
                   <p className="text-sm font-medium text-black">Nazim Khan</p>
@@ -126,20 +123,19 @@ const Review = () => {
                     pride.
                   </p>
                 </div>
-                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div className="hidden md:inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   <img src={card2} alt="..." className="h-10" />
                 </div>
               </div>
             </li>
 
             <li className="py-3 sm:py-4">
-              <div className="flex items-center">
+              <div className="flex items-center md:flex-row flex-col">
                 <div className="flex-shrink-0">
-                  <img
-                    className="w-8 h-8 rounded-full"
-                    src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
-                    alt="Neil image"
-                  />
+                  <UserCircleIcon class="h-10 w-10 text-gray-500" />
+                  <div className="md:hidden items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <img src={card2} alt="..." className="h-10" />
+                  </div>
                 </div>
                 <div className="flex-1 min-w-0 ms-4">
                   <p className="text-sm font-medium text-black">Andy Hansda</p>
@@ -151,20 +147,19 @@ const Review = () => {
                     but here, everything is top-notch.
                   </p>
                 </div>
-                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div className="hidden md:inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   <img src={card2} alt="..." className="h-10" />
                 </div>
               </div>
             </li>
 
             <li className="py-3 sm:py-4">
-              <div className="flex items-center">
+              <div className="flex items-center md:flex-row flex-col">
                 <div className="flex-shrink-0">
-                  <img
-                    className="w-8 h-8 rounded-full"
-                    src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
-                    alt="Neil image"
-                  />
+                  <UserCircleIcon class="h-10 w-10 text-gray-500 mx-auto" />
+                  <div className="md:hidden items-center text-base font-semibold text-gray-900 dark:text-white">
+                    <img src={card3} alt="..." className="h-10" />
+                  </div>
                 </div>
                 <div className="flex-1 min-w-0 ms-4">
                   <p className="text-sm font-medium text-black">Chimmoy Ray</p>
@@ -177,14 +172,19 @@ const Review = () => {
                     new skills through internal training programs.
                   </p>
                 </div>
-                <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div className="hidden md:inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   <img src={card3} alt="..." className="h-10" />
                 </div>
               </div>
             </li>
           </ul>
 
-          <Link to={'/reviews'} className="flex justify-center items-center cursor-pointer hover:text-blue-400 transition-colors">read more...</Link>
+          <Link
+            to={"/reviews"}
+            className="flex justify-center items-center cursor-pointer hover:text-blue-400 transition-colors"
+          >
+            read more...
+          </Link>
         </div>
       </div>
     </div>
