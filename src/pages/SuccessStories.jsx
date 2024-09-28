@@ -5,6 +5,10 @@ import face1 from "../assets/faces/face1.jpg";
 import face2 from "../assets/faces/face2.jpg";
 import face3 from "../assets/faces/face3.jpg";
 import face4 from "../assets/faces/face4.jpg";
+import face5 from "../assets/faces/face5.jpg";
+import face6 from "../assets/faces/face6.jpg";
+import face7 from "../assets/faces/face7.jpg";
+import face8 from "../assets/faces/face8.jpg";
 
 const SuccessStories = () => {
   return (
@@ -17,7 +21,7 @@ const SuccessStories = () => {
         </h1>
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+            className="object-cover w-full h-96 md:h-auto md:w-48 px-2"
             src={face1}
             alt=""
           />
@@ -46,7 +50,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+            className="object-cover w-full h-96 md:h-auto md:w-48 px-2"
             src={face2}
             alt=""
           />
@@ -76,7 +80,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+            className="object-cover w-full h-96 md:h-auto md:w-48 px-2"
             src={face3}
             alt=""
           />
@@ -106,7 +110,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
             src={face4}
             alt=""
           />
@@ -130,6 +134,108 @@ const SuccessStories = () => {
               logistics operations. His success has allowed him to provide a
               better life for his family and support other migrant workers by
               sharing his story.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
+          <img
+            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            src={face5}
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              Sukanya Munshi
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Sukanya Munshi began her journey at Vinci Construction as a
+              general laborer with minimal formal training but a strong
+              commitment to advancing her career. Eager to grow, she enrolled in
+              the company's upskilling program, taking night classes in civil
+              engineering while working on-site during the day. With mentorship
+              from senior engineers and her expanding technical skills, Sukanya
+              was promoted to assistant site engineer after earning her
+              certification. Her dedication and expertise quickly led to her
+              promotion as a full Site Engineer, where she now oversees complex
+              projects. Sukanya’s story exemplifies the career advancement
+              opportunities available at Vinci Construction.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
+          <img
+            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            src={face6}
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              Aisha Khatun
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Aisha began her career at Kiewit Construction in an administrative
+              role, handling paperwork and coordinating schedules. Though her
+              background wasn’t in construction, she took an interest in the
+              work being done around her. Encouraged by her supervisors, Aisha
+              pursued a certification in project management, utilizing the
+              company’s education assistance program. Her initiative and
+              leadership skills didn’t go unnoticed, and she transitioned from
+              admin work to overseeing projects as a Construction Manager.
+              Aisha’s journey highlights the opportunities for growth and skill
+              development that Kiewit Construction provides to its employees.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
+          <img
+            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            src={face7}
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              Monty Fedorin
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Monty began his journey at ACS Construction as an apprentice right
+              after high school, with little formal training but a passion for
+              building. He worked hard on-site, learning the fundamentals of
+              construction and engineering from experienced professionals.
+              Recognizing his potential, the company supported him in completing
+              a part-time engineering course. After earning his qualifications,
+              Monty was promoted to Site Engineer, and over the years, his
+              dedication led him to his current position as a Senior Site
+              Engineer, overseeing major commercial projects. His rise through
+              the ranks exemplifies the growth opportunities ACS Construction
+              offers to those willing to learn and develop their skills.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
+          <img
+            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            src={face8}
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+              Pikesh Jain
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Pikesh started his career at ACS Construction as a surveyor,
+              responsible for mapping out land and preparing construction sites.
+              His attention to detail and analytical skills stood out, leading
+              him to pursue further education in civil engineering, which ACS
+              Construction supported through its education assistance program.
+              Over the years, Pikesh advanced through various engineering roles,
+              and today he serves as Chief Engineer, overseeing all technical
+              aspects of the company’s projects. His story is a testament to how
+              hard work, continuous learning, and company support can lead to
+              long-term career success.
             </p>
           </div>
         </div>

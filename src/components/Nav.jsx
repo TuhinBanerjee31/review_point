@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../assets/onsitebestreview_logo.png";
 
 const Nav = () => {
   useEffect(() => {
@@ -16,9 +17,24 @@ const Nav = () => {
   function NavList() {
     return (
       <ul className="mt-5 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-        <NavLink to={'/interview-tips'} className='cursor-pointer font-medium hover:text-blue-400 transition-colors'>Interview Tips</NavLink>
-        <NavLink to={'/success-stories'} className='cursor-pointer font-medium hover:text-blue-400 transition-colors'>Success Stories</NavLink>
-        <NavLink to={'/reviews'} className='cursor-pointer font-medium hover:text-blue-400 transition-colors'>Reviews</NavLink>
+        <NavLink
+          to={"/interview-tips"}
+          className="cursor-pointer font-medium hover:text-blue-400 transition-colors"
+        >
+          Interview Tips
+        </NavLink>
+        <NavLink
+          to={"/success-stories"}
+          className="cursor-pointer font-medium hover:text-blue-400 transition-colors"
+        >
+          Success Stories
+        </NavLink>
+        <NavLink
+          to={"/reviews"}
+          className="cursor-pointer font-medium hover:text-blue-400 transition-colors"
+        >
+          Reviews
+        </NavLink>
       </ul>
     );
   }
@@ -40,10 +56,15 @@ const Nav = () => {
       <nav className="max-w-screen-xl mx-auto font-Quicksand">
         <div className="flex items-center justify-between text-blue-gray-900">
           <div>
-            <NavLink to={"/"} className="text-2xl font-bold">
-              OnSiteBestReview
+            <NavLink to={"/"} className="flex gap-2">
+              <img src={logo} className="h-12" alt="onsitebestreview Logo" />
+              
+              <div>
+              <p className="text-2xl font-bold">OnSiteBestReview</p>
+              <p className="tracking-wider">know about your Industry</p>
+              </div>
             </NavLink>
-            <p className="tracking-wider">know about your Industry</p>
+            {/* <p className="tracking-wider">know about your Industry</p> */}
           </div>
           <div className="hidden lg:block">
             <NavList />
