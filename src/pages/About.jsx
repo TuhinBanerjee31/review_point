@@ -8,10 +8,10 @@ const About = () => {
       <Nav />
       <div className="min-h-screen pt-6 pb-10 px-5 flex flex-col justify-center gap-2">
         <h3 className="text-4xl font-semibold pt-7 pb-10 max-w-screen-xl mx-auto">
-          About OnSite Review
+          About OnSite Reviews
         </h3>
         <h5 className="text-xl tracking-wider max-w-screen-xl mx-auto">
-          Welcome to OnSite Review, your premier destination for comprehensive
+          Welcome to OnSite Reviews, your premier destination for comprehensive
           reviews and insights on construction companies around the globe. In an
           industry where trust and reliability are paramount, we recognize the
           challenges faced by clients when selecting the right construction
@@ -21,7 +21,7 @@ const About = () => {
         </h5>
 
         <h5 className="text-xl tracking-wider max-w-screen-xl mx-auto">
-          At OnSite Review, we believe that informed decisions lead to
+          At OnSite Reviews, we believe that informed decisions lead to
           successful projects. Our mission is to empower homeowners, developers,
           and project managers with the information they need to navigate the
           construction landscape confidently. Our platform features detailed
@@ -46,7 +46,7 @@ const About = () => {
         </h5>
 
         <h5 className="text-xl tracking-wider max-w-screen-xl mx-auto">
-          In addition to reviews, OnSite Review offers valuable resources,
+          In addition to reviews, OnSite Reviews offers valuable resources,
           including articles, guides, and industry news to keep you informed
           about the latest developments in construction practices and
           technologies. We strive to be more than just a review platform; we aim
@@ -54,7 +54,7 @@ const About = () => {
         </h5>
 
         <h5 className="text-xl tracking-wider max-w-screen-xl mx-auto">
-          Join our community today and discover why OnSite Review is the trusted
+          Join our community today and discover why OnSite Reviews is the trusted
           source for construction company evaluations. Together, let's build a
           foundation of trust and excellence in the construction
           industry—because every project deserves the best.
