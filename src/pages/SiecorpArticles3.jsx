@@ -5,8 +5,34 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/siecorp_article_3.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+// import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/siecorp3rvr.jpg";
 
 const SiecorpArticles3 = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Glenn Yoder",
+      days: "6",
+      comment: "Siecorp’s excellence in infrastructure solutions is evident in their ability to transform communities through thoughtfully designed projects. It’s heartening to see a company that not only builds structures but also enriches the lives of the people who use them." ,
+      likes: "2"
+    },
+    {
+      id: 2,
+      name: "Basem Ahmed",
+      days: "4",
+      comment: "The way Siecorp approaches infrastructure development with a focus on innovation and sustainability is truly commendable. Their commitment to creating long-lasting solutions shows they care about both present needs and future generations." ,
+      likes: "7"
+    },
+    {
+      id: 3,
+      name: "Shovon Pal",
+      days: "9",
+      comment: "Siecorp's diverse range of core services speaks to their expertise and versatility in the infrastructure sector. It’s impressive how they can seamlessly integrate different specialties to deliver comprehensive solutions that meet the unique needs of each project." ,
+      likes: "12"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -166,8 +192,8 @@ const SiecorpArticles3 = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Jose Colon"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -239,26 +265,28 @@ const SiecorpArticles3 = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+              Quantity Surveyor @ D.R. HORTON
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Jose Colon is a highly experienced quality inspector with over 15
-              years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Jose Colon is an experienced Quantity Surveyor with over 15 years
+              of expertise in managing construction costs and contracts. He has
+              worked on diverse projects, from commercial buildings to
+              large-scale infrastructure, ensuring financial efficiency and
+              adherence to budgets. Jose excels in cost estimation, procurement,
+              and risk management, providing accurate financial advice to
+              clients and stakeholders. His keen attention to detail and deep
+              understanding of construction processes allow him to optimize
+              resources while maintaining high-quality standards. Known for his
+              problem-solving skills, Jose is a trusted figure in delivering
+              projects within scope, time, and budget.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

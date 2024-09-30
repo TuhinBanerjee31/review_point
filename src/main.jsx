@@ -31,6 +31,7 @@ import HochtiefArticles from "./pages/HochtiefArticles.jsx";
 import BouyguesArticles from "./pages/BouyguesArticles.jsx";
 import LtArticles from "./pages/LtArticles.jsx";
 import SkanskaArticles from "./pages/SkanskaArticles.jsx";
+import About from "./pages/About.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -58,6 +59,7 @@ const router = createBrowserRouter(
       <Route path="bouygues-articles" element={<BouyguesArticles />} />
       <Route path="lt-articles" element={<LtArticles />} />
       <Route path="skanska-articles" element={<SkanskaArticles />} />
+      <Route path="about" element={<About />} />
     </Route>
   )
 );

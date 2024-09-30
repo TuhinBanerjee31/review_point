@@ -5,8 +5,33 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/acs_article_1.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/acsrvr.jpg";
 
 const AcsArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Rajesh Banik",
+      days: "4",
+      comment: "ACS Group stands out as a global leader in construction and engineering, known for its ability to deliver innovative, large-scale projects that drive urban development and infrastructure growth." ,
+      likes: "2"
+    },
+    {
+      id: 2,
+      name: "Joe Wicomb",
+      days: "10",
+      comment: "With a strong focus on sustainability and technological innovation, ACS Group consistently delivers world-class solutions that meet the evolving needs of communities and industries worldwide." ,
+      likes: "6"
+    },
+    {
+      id: 3,
+      name: "Kashif Polsey",
+      days: "12",
+      comment: "ACS Group’s expertise in managing complex, multinational projects ensures that every development not only enhances infrastructure but also contributes to long-term environmental and social value." ,
+      likes: "9"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -170,8 +195,8 @@ const AcsArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Rohit Joshi"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -243,26 +268,28 @@ const AcsArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Project Manager @ GIS
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Rohit Joshi is a highly experienced quality inspector with over 15
-              years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Rohit Joshi is an experienced Project Manager with over 12 years
+              of expertise in leading diverse projects in the construction and
+              engineering sectors. He specializes in project planning, risk
+              management, and resource allocation, ensuring that projects are
+              delivered on time and within budget. Rohit is known for his strong
+              leadership skills, fostering collaboration among cross-functional
+              teams and maintaining clear communication with stakeholders. His
+              analytical mindset and problem-solving abilities enable him to
+              navigate complex challenges and drive project success. Committed
+              to excellence, Rohit continuously seeks innovative solutions to
+              enhance project efficiency and quality.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+         <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

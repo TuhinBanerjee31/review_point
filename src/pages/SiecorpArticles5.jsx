@@ -5,8 +5,40 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/siecorp_article_5.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/siecorp5rvr.jpg";
 
 const SiecorpArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "John Murmu",
+      days: "2",
+      comment: "Siecorp's involvement in the Delhi-Mumbai Expressway is a game changer for India’s infrastructure landscape. Their commitment to delivering this monumental project demonstrates a genuine passion for enhancing connectivity and accessibility for millions of people." ,
+      likes: "11"
+    },
+    {
+      id: 2,
+      name: "Dhruv Argarwalla",
+      days: "4",
+      comment: "The Delhi-Mumbai Expressway is more than just a road; it represents a vision for progress and economic growth. Siecorp’s contributions to this project highlight their role as a key player in transforming India’s infrastructure and paving the way for a brighter future." ,
+      likes: "9"
+    },
+    {
+      id: 3,
+      name: "Ishan Trivedi",
+      days: "9",
+      comment: "It’s heartening to see how Siecorp is contributing to the Delhi-Mumbai Expressway, a project that will significantly reduce travel time and boost trade. Their dedication to quality and efficiency ensures that this vital link meets the needs of both businesses and everyday travelers." ,
+      likes: "15"
+    },
+    {
+      id: 4,
+      name: "Amisha Kapoor",
+      days: "14",
+      comment: "Siecorp's work on the Delhi-Mumbai Expressway showcases their ability to tackle large-scale infrastructure challenges with creativity and precision. Their efforts not only improve transportation but also create opportunities for local communities along the route." ,
+      likes: "22"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -164,8 +196,8 @@ const SiecorpArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="V Vikash"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -237,26 +269,29 @@ const SiecorpArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Estimator @ GIS
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              V Vikash is a highly experienced quality inspector with over 15
-              years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              V Vikash is an experienced Estimator with over 12 years of
+              expertise in accurately forecasting project costs across various
+              construction sectors. He specializes in cost analysis, tender
+              preparation, and evaluating materials and labor requirements to
+              ensure projects are financially viable. Vikash’s attention to
+              detail and in-depth knowledge of market trends allow him to
+              provide reliable estimates that align with client expectations and
+              project goals. His ability to balance cost efficiency with quality
+              has made him a trusted advisor in pre-construction planning. Known
+              for his analytical skills, Vikash plays a critical role in helping
+              teams optimize budgets and resources for successful project
+              execution.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

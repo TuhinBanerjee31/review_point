@@ -5,8 +5,39 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/siecorp_article_2.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/siecorp2rvr.jpg";
 
 const SiecorpArticles2 = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Rew Jhonson",
+      days: "2",
+      comment: "Siecorp’s employee-centric approach truly shines in its commitment to personal and professional growth. By prioritizing development opportunities and fostering a supportive environment, they empower their team to reach their full potential." ,
+      likes: "7"
+    },
+    {
+      id: 2,
+      name: "Mike Ferry",
+      days: "8",
+      comment: "The emphasis Siecorp places on employee well-being is genuinely refreshing. It’s clear they understand that a happy, healthy workforce leads to greater productivity and job satisfaction, creating a positive ripple effect throughout the company." ,
+      likes: "13"
+    },
+    {
+      id: 3,
+      name: "Daniel Copper",
+      days: "14",
+      comment: "Siecorp’s focus on safety not only protects their employees but also cultivates a culture of trust and care. Knowing that the company prioritizes their health and safety makes employees feel valued and respected." ,
+      likes: "13"
+    },
+    {
+      id: 4,
+      name: "Jacob Henry",
+      days: "16",
+      comment: "It’s inspiring to see how Siecorp invests in its people, offering resources and programs that enhance both career growth and personal well-being. This commitment reflects a deep understanding that their greatest asset is their workforce." ,
+      likes: "8"
+    }
+  ]
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -140,8 +171,8 @@ const SiecorpArticles2 = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Steve Willson"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -213,26 +244,28 @@ const SiecorpArticles2 = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+              Architect @ AECOM
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Steve Willson is a highly experienced quality inspector with
-              over 15 years in the infrastructure, construction, energy, and
-              maritime sectors. Known for his precision and commitment to
-              safety, he has worked on a range of large-scale projects, ensuring
-              they meet industry standards and exceed expectations. Steve's
-              expertise spans from renewable energy installations to complex
-              maritime infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Steve Willson is an experienced architect known for his innovative
+              designs and sustainable approach to modern architecture. With over
+              two decades in the field, he has worked on a wide range of
+              projects, from residential homes to large commercial buildings.
+              Steve combines his deep technical knowledge with a passion for
+              creating environmentally friendly, functional spaces that meet
+              both aesthetic and practical needs. His collaborative approach
+              ensures close coordination with clients, engineers, and
+              contractors to deliver high-quality results. Steve's expertise in
+              sustainable materials and energy-efficient design has earned him
+              recognition within the architectural community.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

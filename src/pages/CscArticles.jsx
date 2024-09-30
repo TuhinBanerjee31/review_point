@@ -5,8 +5,26 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/csc_article_1.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/cscrvr.jpg";
 
 const CscArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Jianguo",
+      days: "5",
+      comment: "CSCEC has established itself as a global construction powerhouse, consistently delivering large-scale projects that transform skylines and infrastructure worldwide, while supporting economic growth." ,
+      likes: "10"
+    },
+    {
+      id: 2,
+      name: "Harry Sleater",
+      days: "12",
+      comment: "As one of the world’s largest construction firms, CSCEC is known for its ability to execute complex projects with precision, combining innovation and efficiency to build infrastructure that meets global demands." ,
+      likes: "15"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -206,8 +224,8 @@ const CscArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Zhang Wei"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -279,26 +297,29 @@ const CscArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Quality Inspector @ CIDC
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Zhang Wei is a highly experienced quality inspector with over 15
-              years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Zhang Wei is a meticulous Quality Inspector with over 10 years of
+              experience in ensuring that products meet stringent quality
+              standards across various manufacturing sectors. He specializes in
+              conducting inspections, testing materials, and implementing
+              quality control procedures to identify defects and improve
+              processes. Zhang is adept at analyzing data and providing detailed
+              reports that facilitate continuous improvement and compliance with
+              industry regulations. His strong attention to detail and
+              commitment to excellence have earned him a reputation as a
+              reliable quality assurance professional. Known for his effective
+              communication skills, Zhang collaborates closely with production
+              teams to enhance product quality and efficiency.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

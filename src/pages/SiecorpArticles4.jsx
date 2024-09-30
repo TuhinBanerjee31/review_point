@@ -5,8 +5,47 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/siecorp_article_4.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/siecorp4rvr.png";
 
 const SiecorpArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Peter Beniot",
+      days: "3",
+      comment: "Siecorp’s rise in the Indian market is a testament to their innovative spirit and dedication to excellence. It’s exciting to see how they’re carving out a niche for themselves by focusing on quality and customer satisfaction." ,
+      likes: "12"
+    },
+    {
+      id: 2,
+      name: "V. Nikhil",
+      days: "5",
+      comment: "As an emerging organization, Siecorp is bringing fresh ideas and perspectives to the Indian construction and infrastructure landscape. Their commitment to adapting to local needs while maintaining global standards is commendable and sets them apart." ,
+      likes: "7"
+    },
+    {
+      id: 3,
+      name: "Juhi Ray",
+      days: "8",
+      comment: "It’s inspiring to watch Siecorp grow in the Indian market, particularly their emphasis on sustainability and community engagement. They are not just building projects; they are building relationships with the communities they serve, which is essential for long-term success." ,
+      likes: "21"
+    },
+    {
+      id: 4,
+      name: "Sonal Jha",
+      days: "12",
+      comment: "Siecorp's emergence in India is marked by a proactive approach to challenges and opportunities. Their willingness to embrace innovation and invest in talent demonstrates a forward-thinking mindset that is crucial in today’s competitive market." ,
+      likes: "34"
+    },
+    {
+      id: 5,
+      name: "Wasim Reza",
+      days: "13",
+      comment: "The enthusiasm and passion that Siecorp brings to the Indian market are palpable. Their focus on creating impactful infrastructure solutions reflects a deep commitment to enhancing the quality of life for people, and it’s exciting to see what they will achieve in the future." ,
+      likes: "24"
+    },
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -160,8 +199,8 @@ const SiecorpArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Sharan Singh"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -233,26 +272,29 @@ const SiecorpArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Project Manager @ L&T
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Sharan Singh is a highly experienced quality inspector with
-              over 15 years in the infrastructure, construction, energy, and
-              maritime sectors. Known for his precision and commitment to
-              safety, he has worked on a range of large-scale projects, ensuring
-              they meet industry standards and exceed expectations. Steve's
-              expertise spans from renewable energy installations to complex
-              maritime infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Sharan Singh is an experienced Project Manager with over 18 years
+              of expertise in leading large-scale construction and
+              infrastructure projects. He specializes in project planning,
+              execution, and delivery, ensuring that projects meet timelines,
+              budgets, and quality standards. Sharan is skilled at coordinating
+              multidisciplinary teams, managing stakeholders, and mitigating
+              risks to keep projects on track. His leadership and strategic
+              vision have made him a key player in the successful completion of
+              complex projects, from commercial developments to urban
+              infrastructure. Known for his strong communication and
+              problem-solving abilities, Sharan is highly regarded for
+              delivering results in fast-paced environments.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

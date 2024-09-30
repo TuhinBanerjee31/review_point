@@ -5,8 +5,46 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/siecorp_article_1.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/siecorprvr.jpg";
 
 const SiecorpArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Rishab Agarwal",
+      days: "3",
+      comment: "Siecorp is making significant strides in the construction and infrastructure sectors, showcasing their ability to deliver high-quality projects that enhance community living. Their commitment to sustainability and innovative energy solutions sets them apart in the industry." ,
+      likes: "10"
+    },
+    {
+      id: 2,
+      name: "Mark Foley",
+      days: "6",
+      comment: "With a diverse portfolio spanning construction and energy, Siecorp demonstrates a remarkable capacity for tackling complex projects while maintaining safety and quality standards. Their focus on collaboration ensures successful partnerships and impactful outcomes." ,
+      likes: "7"
+    },
+    {
+      id: 3,
+      name: "Nikki Rodriguez",
+      days: "11",
+      comment: "Siecorp’s expertise in infrastructure development is evident in their ability to execute large-scale projects that drive economic growth. Their dedication to integrating modern technologies into construction processes is commendable and sets a benchmark for the industry." ,
+      likes: "21"
+    },
+    {
+      id: 4,
+      name: "Miro Harpper",
+      days: "17",
+      comment: "The emphasis Siecorp places on renewable energy initiatives highlights their commitment to creating a sustainable future. Their innovative approaches not only improve efficiency but also contribute positively to the environment." ,
+      likes: "18"
+    },
+    {
+      id: 5,
+      name: "W. Lisa",
+      days: "29",
+      comment: "TSiecorp stands out for its holistic approach to project management, ensuring that every aspect—from planning to execution—is handled with precision. Their proactive problem-solving and attention to detail make them a reliable choice for clients in the construction and energy sectors." ,
+      likes: "20"
+    }
+  ]
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -186,8 +224,8 @@ const SiecorpArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Lee Chan Xinjiang"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -259,26 +297,29 @@ const SiecorpArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Senior Civil Engineer @ GIS
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Lee Chan Xinjiang is a highly experienced quality inspector with
-              over 15 years in the infrastructure, construction, energy, and
-              maritime sectors. Known for his precision and commitment to
-              safety, he has worked on a range of large-scale projects, ensuring
-              they meet industry standards and exceed expectations. Steve's
-              expertise spans from renewable energy installations to complex
-              maritime infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Lee Chan Xinjiang is an experienced Senior Civil Engineer with a
+              distinguished career spanning over 25 years in infrastructure
+              development. He specializes in large-scale projects, including
+              bridges, highways, and urban planning, ensuring structural
+              integrity and compliance with safety standards. Lee is known for
+              his expertise in project management, overseeing complex
+              engineering teams and collaborating with architects and
+              contractors to deliver projects on time and within budget. His
+              commitment to sustainability and innovation has been a hallmark of
+              his work, integrating eco-friendly practices into modern
+              engineering solutions. Lee's leadership and technical acumen have
+              made him a respected figure in the civil engineering industry.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

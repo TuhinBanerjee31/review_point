@@ -5,8 +5,47 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/siecorp_article_6.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/siecorp6rvr.jpg";
 
 const SiecorpArticles6 = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Bray Rowan",
+      days: "3",
+      comment: "Siecorp’s contributions to the Mumbai-Pune Sea Link are truly transformative, redefining how people travel between two major cities. Their work not only enhances connectivity but also enriches the travel experience with stunning views of the coastline." ,
+      likes: "9"
+    },
+    {
+      id: 2,
+      name: "Simran Singh",
+      days: "7",
+      comment: "The Mumbai-Pune Sea Link stands as a testament to Siecorp’s commitment to innovation and excellence in infrastructure development. Their efforts have created a vital connection that significantly reduces travel time, benefiting commuters and businesses alike." ,
+      likes: "18"
+    },
+    {
+      id: 3,
+      name: "Avi Raj",
+      days: "11",
+      comment: "It’s inspiring to see how Siecorp is playing a pivotal role in revolutionizing connectivity with the Mumbai-Pune Sea Link. This project showcases their dedication to creating modern infrastructure that meets the growing needs of urban populations." ,
+      likes: "19"
+    },
+    {
+      id: 4,
+      name: "Aman Kumar",
+      days: "16",
+      comment: "Siecorp’s work on the Mumbai-Pune Sea Link reflects a deep understanding of the importance of seamless connectivity in a rapidly growing economy. Their focus on quality and safety ensures that this landmark project serves as a reliable route for years to come." ,
+      likes: "13"
+    },
+    {
+      id: 5,
+      name: "Gaurav Verma",
+      days: "19",
+      comment: "The impact of Siecorp’s contributions to the Mumbai-Pune Sea Link goes beyond engineering; it’s about fostering community and economic growth. By improving access between these two bustling cities, they are helping to bridge opportunities and enhance the quality of life for countless individuals." ,
+      likes: "15"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -188,12 +227,11 @@ const SiecorpArticles6 = () => {
           also in contributing to India’s long-term growth and prosperity.
         </h5>
 
-
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Steffen Henze"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -265,26 +303,29 @@ const SiecorpArticles6 = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Maritime Engineer @ PIL
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Steffen Henze is a highly experienced quality inspector with over
-              15 years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Steffen Henze is an experienced Maritime Engineer with over 20
+              years of expertise in designing and overseeing the construction of
+              ships, offshore platforms, and marine structures. He specializes
+              in naval architecture, hydrodynamics, and marine propulsion
+              systems, ensuring that vessels are efficient, safe, and compliant
+              with international maritime standards. Steffen’s work spans both
+              commercial and military projects, where his technical knowledge
+              and problem-solving skills are invaluable. He is deeply committed
+              to integrating sustainable practices, such as eco-friendly ship
+              designs and renewable energy solutions, into the maritime
+              industry. Known for his precision and innovation, Steffen is a
+              leading figure in the field of maritime engineering.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

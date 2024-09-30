@@ -5,8 +5,40 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/kiewit_article_1.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/kiewitrvr.jpg";
 
 const KiewitArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Mark Stiener",
+      days: "7",
+      comment: "Kiewit Construction Company consistently demonstrates exceptional project execution and innovative solutions, making them a leader in the construction industry. Their commitment to safety and sustainability is commendable and sets a benchmark for others." ,
+      likes: "13"
+    },
+    {
+      id: 2,
+      name: "Bron Fatu",
+      days: "11",
+      comment: "With a proven track record of delivering high-quality infrastructure projects, Kiewit Construction Company exemplifies professionalism and expertise. Their ability to adapt to challenges while maintaining strong client relationships is truly impressive." ,
+      likes: "6"
+    },
+    {
+      id: 3,
+      name: "Paul Selina",
+      days: "14",
+      comment: "Known for their innovative approaches and cutting-edge technology, Kiewit Construction Company is at the forefront of transforming the construction landscape. Their focus on collaboration and communication fosters a positive working environment for all stakeholders." ,
+      likes: "19"
+    },
+    {
+      id: 4,
+      name: "Nitesh Kedia",
+      days: "23",
+      comment: "Kiewit Construction Company exemplifies excellence in project management, consistently delivering results on time and within budget. Their commitment to safety and employee well-being reflects their core values and sets them apart in the industry." ,
+      likes: "21"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -173,8 +205,8 @@ const KiewitArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Xander Andreson"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -256,7 +288,7 @@ const KiewitArticles = () => {
               over 15 years in the infrastructure, construction, energy, and
               maritime sectors. Known for his precision and commitment to
               safety, he has worked on a range of large-scale projects, ensuring
-              they meet industry standards and exceed expectations. Steve's
+              they meet industry standards and exceed expectations. Xander's
               expertise spans from renewable energy installations to complex
               maritime infrastructure, where he plays a critical role in quality
               assurance, project management, and regulatory compliance, making
@@ -265,7 +297,7 @@ const KiewitArticles = () => {
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

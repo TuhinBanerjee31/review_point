@@ -5,8 +5,33 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/hochtief_article_1.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/hochtiefrvr.jpg";
 
 const HochtiefArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Fion Lau",
+      days: "7",
+      comment: "Hochtief AG is known for raising the bar in global construction, delivering innovative and sustainable projects that set new industry standards for quality and efficiency." ,
+      likes: "20"
+    },
+    {
+      id: 2,
+      name: "Jean Phiippe A.",
+      days: "11",
+      comment: "With a reputation for excellence, Hochtief consistently pushes boundaries, developing infrastructure that enhances cities and improves the quality of life for communities around the world." ,
+      likes: "8"
+    },
+    {
+      id: 3,
+      name: "Joanne Teh",
+      days: "18",
+      comment: "Hochtief AG’s focus on sustainability and advanced engineering has positioned it as a leader in the construction sector, building projects that are as future-focused as they are reliable." ,
+      likes: "10"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -170,8 +195,8 @@ const HochtiefArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Luke Huberdeau"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -243,26 +268,28 @@ const HochtiefArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Assistent Manager @ CIDC
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Luke Huberdeau is a highly experienced quality inspector with over
-              15 years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Luke Huberdeau is an experienced Assistant Manager with over 8
+              years of expertise in supporting day-to-day operations across
+              various industries, including retail and hospitality. He excels in
+              team coordination, staff training, and ensuring smooth workflow to
+              meet organizational goals and customer satisfaction. Luke’s strong
+              problem-solving skills allow him to address operational challenges
+              efficiently while maintaining high standards of service. He works
+              closely with senior management to implement strategies, optimize
+              resources, and improve productivity. Known for his leadership and
+              ability to foster a positive work environment, Luke is a key
+              contributor to team success.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles
