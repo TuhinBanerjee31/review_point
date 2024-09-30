@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import {
-  Navbar,
   Collapse,
-  Typography,
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -60,7 +58,7 @@ const Nav = () => {
               <img src={logo} className="h-12" alt="onsitebestreview Logo" />
               
               <div>
-              <p className="text-2xl font-bold">OnSite Review</p>
+              <p className="text-2xl font-bold">OnSite Reviews</p>
               <p className="tracking-wider">know about your Industry</p>
               </div>
             </NavLink>
