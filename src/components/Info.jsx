@@ -11,8 +11,27 @@ import card8 from "../assets/oc-7.png";
 import card9 from "../assets/oc-8.png";
 import card10 from "../assets/oc-9.png";
 import { Link } from "react-router-dom";
+import ArticleCard from '../components/ArticleCard';
 
 const Info = () => {
+  const cardData = [
+    {
+      title: "SIECORP’s Role in Shaping India’s Infrastructure: Contributions to the Delhi-Mumbai Expressway",
+      desc: "SIECORP has established itself as a key player in India’s burgeoning infrastructure sector, and its involvement in the Delhi-Mumbai Expressway has further cemented its reputation as a leader in delivering large-scale.....",
+      link: "/siecorp-articles-5"
+    },
+    {
+      title: "SIECORP’s Role in Revolutionizing Connectivity: Contributions to the Mumbai-Pune Sea Link",
+      desc: "The Mumbai-Pune Sea Link stands as one of the most ambitious infrastructure projects in India, aiming to bridge the connectivity between two of the country’s largest economic hubs.SIECORP, a global infrastructure solutions.....",
+      link: "/siecorp-articles-6"
+    },
+    {
+      title: "SIECORP: An Emerging Organization in the Indian Market",
+      desc: "SIECORP, a global leader in infrastructure solutions, has steadily gained prominence in the Indian market, positioning itself as a key player in the country’s rapidly growing construction and infrastructure sectors. Known for its innovative approach, strong project management.....",
+      link: "/siecorp-articles-4"
+    }
+  ]
+
   return (
     <div className="min-h-screen">
       <div className="h-auto max-w-screen-md mx-auto py-10 px-5">
@@ -66,12 +85,12 @@ const Info = () => {
 
         <Link
           to={"/siecorp-articles"}
-          className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
+          className="max-w-sm py-6 px-20 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
           <img src={card2} alt="..." className="h-20 mx-auto" />
 
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-            Siecorp
+            Siecorp                        
           </h5>
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 2
@@ -248,6 +267,16 @@ const Info = () => {
           <span className="text-4xl mx-4">⚫</span>
         </div>
       </Link>
+
+      <h2 className="font-semibold text-5xl text-center pt-10">
+      Arictle you might be interested in
+      </h2>
+
+      <div className='flex flex-wrap gap-6 justify-center pt-14 pb-16'>
+        <ArticleCard data={cardData[0]} />
+        <ArticleCard data={cardData[1]} />
+        <ArticleCard data={cardData[2]} />
+      </div>
     </div>
   );
 };
