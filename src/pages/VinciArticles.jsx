@@ -5,8 +5,32 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/vinci_article_1.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/vincirvr.jpg";
 
 const VinciArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Zee wyatt",
+      days: "5",
+      comment: "Vinci's infrastructure projects are a blend of innovation and sustainability, creating lasting benefits for communities while ensuring future-ready development." ,
+      likes: "7"
+    },
+    {
+      id: 2,
+      name: "Alex Boult",
+      days: "7",
+      comment: "By focusing on both quality and environmental impact, Vinci continues to set benchmarks in infrastructure development that improve daily life and enhance regional growth." ,
+      likes: "3"
+    },
+    {
+      id: 3,
+      name: "Piyush Narayan",
+      days: "10",
+      comment: "Vinci’s commitment to modern infrastructure ensures not only efficient transport and energy solutions but also contributes to the long-term well-being of local communities." ,
+      likes: "13"
+    }
+  ]
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -174,8 +198,8 @@ const VinciArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Dom Levesque"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -247,26 +271,29 @@ const VinciArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Mechanical Engineer @ GIS
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Dom Levesque is a highly experienced quality inspector with
-              over 15 years in the infrastructure, construction, energy, and
-              maritime sectors. Known for his precision and commitment to
-              safety, he has worked on a range of large-scale projects, ensuring
-              they meet industry standards and exceed expectations. Steve's
-              expertise spans from renewable energy installations to complex
-              maritime infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Dom Levesque is an experienced Mechanical Engineer with over 15
+              years of expertise in designing and optimizing mechanical systems
+              across various industries, including automotive, aerospace, and
+              manufacturing. He specializes in fluid dynamics, thermodynamics,
+              and mechanical design, ensuring systems are efficient, reliable,
+              and meet stringent performance standards. Dom is known for his
+              ability to solve complex engineering challenges and implement
+              innovative solutions that improve product functionality and reduce
+              costs. His collaborative approach allows him to work seamlessly
+              with multidisciplinary teams, from concept design to production.
+              Dom’s passion for cutting-edge technology and sustainability
+              drives his pursuit of engineering excellence.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

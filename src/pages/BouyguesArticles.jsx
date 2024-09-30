@@ -7,6 +7,16 @@ import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
 
 const BouyguesArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Darren O'Neil",
+      days: "17",
+      comment: "As a pillar of modern infrastructure development, Bouygues Construction consistently transforms urban landscapes with projects that prioritize both environmental impact and community well-being." ,
+      likes: "5"
+    }
+  ]
+
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -180,7 +190,7 @@ const BouyguesArticles = () => {
           <div className="flex items-center gap-4 text-slate-800">
             <img
               src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              alt="Ryan Eric"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -252,26 +262,29 @@ const BouyguesArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Site Engineer @ GIS
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Ryan Eric is a highly experienced quality inspector with over 15
-              years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Ryan Eric is a dedicated Site Engineer with over 7 years of
+              experience in managing construction projects from inception to
+              completion. He specializes in site supervision, quality assurance,
+              and safety compliance, ensuring that all work adheres to project
+              specifications and industry standards. Ryan's strong analytical
+              skills enable him to identify potential issues early and implement
+              effective solutions to keep projects on schedule. He is known for
+              his hands-on approach and excellent communication skills,
+              facilitating collaboration among contractors, architects, and
+              project managers. Committed to delivering high-quality results,
+              Ryan plays a crucial role in transforming blueprints into reality
+              on-site.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

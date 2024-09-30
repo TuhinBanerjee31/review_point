@@ -5,8 +5,32 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import articleImage from "../assets/bechtel_article_1.jpg";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
+import rvr from "../assets/reviewers/bechtelrvr.jpg";
 
 const BechtelArticles = () => {
+  let commentData= [
+    {
+      id: 1,
+      name: "Neha Yadav",
+      days: "8",
+      comment: "Bechtel's legacy as a global leader in engineering and construction is defined by its ability to tackle some of the world's most complex and challenging projects with precision and expertise. Their work leaves a lasting impact on both industries and communities." ,
+      likes: "5"
+    },
+    {
+      id: 2,
+      name: "Micky Lynn",
+      days: "15",
+      comment: "With a century-long history, Bechtel has pioneered innovative solutions that drive progress, from iconic megastructures to essential infrastructure, always maintaining a focus on quality, safety, and sustainability." ,
+      likes: "13"
+    },
+    {
+      id: 3,
+      name: "Bren Rodes",
+      days: "17",
+      comment: "Bechtel’s commitment to project management excellence ensures that every project—no matter the scale—delivers lasting value to society, while fostering collaboration and responsible growth." ,
+      likes: "19"
+    }
+  ]
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
       <Nav />
@@ -186,8 +210,8 @@ const BechtelArticles = () => {
         <div className="flex w-full p-4 max-w-screen-lg mx-auto flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
           <div className="flex items-center gap-4 text-slate-800">
             <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-              alt="Tania Andrew"
+              src={rvr}
+              alt="Drew Felix"
               className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center"
             />
             <div className="flex w-full flex-col">
@@ -259,26 +283,30 @@ const BechtelArticles = () => {
                 </div>
               </div>
               <p className="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                Quality Inspector @ GIS
+                Site Engineer @ GIS
               </p>
             </div>
           </div>
           <div className="mt-6">
             <p className="text-base text-slate-600 font-light leading-normal">
-              Drew Felix is a highly experienced quality inspector with over 15
-              years in the infrastructure, construction, energy, and maritime
-              sectors. Known for his precision and commitment to safety, he has
-              worked on a range of large-scale projects, ensuring they meet
-              industry standards and exceed expectations. Steve's expertise
-              spans from renewable energy installations to complex maritime
-              infrastructure, where he plays a critical role in quality
-              assurance, project management, and regulatory compliance, making
-              him a trusted professional in his field.
+              Drew Felix is an experienced Site Engineer with over 10 years of
+              expertise in overseeing on-site construction activities for a
+              variety of projects, including commercial buildings and
+              infrastructure developments. He specializes in ensuring project
+              specifications, safety standards, and timelines are met through
+              effective coordination of resources and personnel. Drew excels in
+              problem-solving on the ground, managing everything from quality
+              control to site inspections and compliance with regulatory
+              requirements. His strong communication skills and hands-on
+              approach enable smooth collaboration between contractors,
+              architects, and project managers. Known for his leadership on
+              site, Drew ensures projects are completed efficiently and to the
+              highest standards.
             </p>
           </div>
         </div>
 
-        <CommentSection />
+        <CommentSection commentData={commentData} />
 
         <h2 className="font-semibold text-3xl text-center py-6">
           Related Articles

@@ -54,140 +54,171 @@ const Info = () => {
           to={"/kiewit-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card1} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
-            Rank 1
+          <img src={card1} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+            Kiewit Corporation
           </h5>
 
-          <p className="mb-3 font-normal text-white-500 dark:text-white-400">
+          {/* <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 1 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/siecorp-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card2} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card2} alt="..." className="h-20 mx-auto" />
+
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+            Siecorp
+          </h5>
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 2
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 2 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/vinci-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card3} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card3} alt="..." className="h-20 mx-auto" />
+
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+            Vinci SA
+          </h5>
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 3
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 3 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/bechtel-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card4} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card4} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+          Bechtel Corporation
+          </h5>
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 4
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 4 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/csc-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card5} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card5} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+          CSCE
+          </h5>
+
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 5
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 5 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/acs-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card6} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card6} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+          ACS Groups
+          </h5>
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 6
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 6 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/hochtief-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card7} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card7} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+          Hochtief
+          </h5>
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 7
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 7 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/bouygues-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card8} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card8} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+          Bouygues Group
+          </h5>
+          
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 8
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 8 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/lt-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card9} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card9} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+          Larsen & Toubro Limited
+          </h5>
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 9
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 9 company of the year.
-          </p>
+          </p> */}
         </Link>
 
         <Link
           to={"/skanska-articles"}
           className="max-w-sm p-6 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
-          <img src={card10} alt="..." className="h-12 mx-auto" />
-          <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
+          <img src={card10} alt="..." className="h-20 mx-auto" />
+          <h5 className="text-xl font-semibold tracking-tight text-black text-center">
+          Skanska AB
+          </h5>
+          {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 10
           </h5>
 
           <p className="mb-3 font-normal text-white-500 dark:text-white-400">
             Know more about our Rank 10 company of the year.
-          </p>
+          </p> */}
         </Link>
       </div>
 

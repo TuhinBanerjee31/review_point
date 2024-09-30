@@ -56,11 +56,11 @@ const Nav = () => {
       <nav className="max-w-screen-xl mx-auto font-Quicksand">
         <div className="flex items-center justify-between text-blue-gray-900">
           <div>
-            <NavLink to={"/"} className="flex gap-2">
+            <NavLink to={"/"} className="flex gap-2 cursor-pointer">
               <img src={logo} className="h-12" alt="onsitebestreview Logo" />
               
               <div>
-              <p className="text-2xl font-bold">OnSiteBestReview</p>
+              <p className="text-2xl font-bold">OnSite Review</p>
               <p className="tracking-wider">know about your Industry</p>
               </div>
             </NavLink>
