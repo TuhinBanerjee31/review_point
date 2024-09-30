@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const Info = () => {
   return (
     <div className="min-h-screen">
-      <div className="h-auto max-w-screen-md mx-auto py-10">
+      <div className="h-auto max-w-screen-md mx-auto py-10 px-5">
         <img src={headerImage} alt="..." className="h-full w-full rounded-lg" />
       </div>
 
