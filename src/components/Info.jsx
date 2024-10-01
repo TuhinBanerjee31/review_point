@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import headerImage from "../assets/header-1.jpg";
 import card1 from "../assets/oc-1.png";
 import card2 from "../assets/siecorp_logo.png";
@@ -11,30 +11,63 @@ import card8 from "../assets/oc-7.png";
 import card9 from "../assets/oc-8.png";
 import card10 from "../assets/oc-9.png";
 import { Link } from "react-router-dom";
-import ArticleCard from '../components/ArticleCard';
+import Glide from "@glidejs/glide";
+import article4 from "../assets/siecorp_article_4.jpg";
+import article5 from "../assets/siecorp_article_5.png";
+import article6 from "../assets/siecorp_article_6.jpg";
 
 const Info = () => {
   const cardData = [
     {
-      title: "SIECORP’s Role in Shaping India’s Infrastructure: Contributions to the Delhi-Mumbai Expressway",
+      title:
+        "SIECORP’s Role in Shaping India’s Infrastructure: Contributions to the Delhi-Mumbai Expressway",
       desc: "SIECORP has established itself as a key player in India’s burgeoning infrastructure sector, and its involvement in the Delhi-Mumbai Expressway has further cemented its reputation as a leader in delivering large-scale.....",
-      link: "/siecorp-articles-5"
+      link: "/siecorp-articles-5",
     },
     {
-      title: "SIECORP’s Role in Revolutionizing Connectivity: Contributions to the Mumbai-Pune Sea Link",
+      title:
+        "SIECORP’s Role in Revolutionizing Connectivity: Contributions to the Mumbai-Pune Sea Link",
       desc: "The Mumbai-Pune Sea Link stands as one of the most ambitious infrastructure projects in India, aiming to bridge the connectivity between two of the country’s largest economic hubs.SIECORP, a global infrastructure solutions.....",
-      link: "/siecorp-articles-6"
+      link: "/siecorp-articles-6",
     },
     {
       title: "SIECORP: An Emerging Organization in the Indian Market",
       desc: "SIECORP, a global leader in infrastructure solutions, has steadily gained prominence in the Indian market, positioning itself as a key player in the country’s rapidly growing construction and infrastructure sectors. Known for its innovative approach, strong project management.....",
-      link: "/siecorp-articles-4"
-    }
-  ]
+      link: "/siecorp-articles-4",
+    },
+  ];
+
+  useEffect(() => {
+    const slider = new Glide(".glide-04", {
+      type: "carousel",
+      focusAt: "center",
+      perView: 3,
+      autoplay: 19500,
+      animationDuration: 700,
+      gap: 24,
+      classNames: {
+        nav: {
+          active: "[&>*]:bg-wuiSlate-700",
+        },
+      },
+      breakpoints: {
+        1024: {
+          perView: 2,
+        },
+        640: {
+          perView: 1,
+        },
+      },
+    }).mount();
+
+    return () => {
+      slider.destroy();
+    };
+  }, []);
 
   return (
     <div className="min-h-screen">
-      <div className="h-auto max-w-screen-md mx-auto py-10 px-5">
+      <div className="h-auto max-w-screen-md mx-auto py-12 px-5">
         <img src={headerImage} alt="..." className="h-full w-full rounded-lg" />
       </div>
 
@@ -90,7 +123,7 @@ const Info = () => {
           <img src={card2} alt="..." className="h-20 mx-auto" />
 
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-            Siecorp                        
+            Siecorp
           </h5>
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 2
@@ -125,7 +158,7 @@ const Info = () => {
         >
           <img src={card4} alt="..." className="h-20 mx-auto" />
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-          Bechtel Corporation
+            Bechtel Corporation
           </h5>
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 4
@@ -142,7 +175,7 @@ const Info = () => {
         >
           <img src={card5} alt="..." className="h-20 mx-auto" />
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-          CSCE
+            CSCE
           </h5>
 
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
@@ -160,7 +193,7 @@ const Info = () => {
         >
           <img src={card6} alt="..." className="h-20 mx-auto" />
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-          ACS Groups
+            ACS Groups
           </h5>
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 6
@@ -177,7 +210,7 @@ const Info = () => {
         >
           <img src={card7} alt="..." className="h-20 mx-auto" />
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-          Hochtief
+            Hochtief
           </h5>
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 7
@@ -194,9 +227,9 @@ const Info = () => {
         >
           <img src={card8} alt="..." className="h-20 mx-auto" />
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-          Bouygues Group
+            Bouygues Group
           </h5>
-          
+
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 8
           </h5>
@@ -212,7 +245,7 @@ const Info = () => {
         >
           <img src={card9} alt="..." className="h-20 mx-auto" />
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-          Larsen & Toubro Limited
+            Larsen & Toubro Limited
           </h5>
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 9
@@ -229,7 +262,7 @@ const Info = () => {
         >
           <img src={card10} alt="..." className="h-20 mx-auto" />
           <h5 className="text-xl font-semibold tracking-tight text-black text-center">
-          Skanska AB
+            Skanska AB
           </h5>
           {/* <h5 className="mb-2 text-2xl font-semibold tracking-tight text-black">
             Rank 10
@@ -269,14 +302,94 @@ const Info = () => {
       </Link>
 
       <h2 className="font-semibold text-5xl text-center pt-10">
-      Arictle you might be interested in
+        Arictle you might be interested in
       </h2>
 
-      <div className='flex flex-wrap gap-6 justify-center pt-14 pb-16'>
-        <ArticleCard data={cardData[0]} />
-        <ArticleCard data={cardData[1]} />
-        <ArticleCard data={cardData[2]} />
+      <div className="glide-04 relative max-w-screen-2xl mx-auto py-12 px-3">
+        {/*    <!-- Slides --> */}
+        <div className="overflow-hidden" data-glide-el="track">
+          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+            <Link to={"/siecorp-articles-4"}>
+              <img
+                src={article4}
+                className="m-auto max-h-full w-full max-w-full"
+              />
+              <p className="py-2">
+                SIECORP: An Emerging Organization in the Indian Market
+              </p>
+            </Link>
+            <Link to={"/siecorp-articles-5"}>
+              <img
+                src={article5}
+                className="m-auto max-h-full w-full max-w-full"
+              />
+              <p className="py-2">
+                SIECORP’s Role in Shaping India’s Infrastructure: Contributions
+                to the Delhi-Mumbai Expressway
+              </p>
+            </Link>
+            <Link to={"/siecorp-articles-6"}>
+              <img
+                src={article6}
+                className="m-auto max-h-full w-full max-w-full"
+              />
+              <p className="py-2">
+                SIECORP’s Role in Revolutionizing Connectivity: Contributions to
+                the Mumbai-Pune Sea Link
+              </p>
+            </Link>
+          </ul>
+        </div>
+        {/*    <!-- Controls --> */}
+        {/* <div
+          className="flex w-full items-center justify-center gap-2 p-4"
+          data-glide-el="controls"
+        >
+          <button
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            data-glide-dir="<"
+            aria-label="prev slide"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="h-5 w-5"
+            >
+              <title>prev slide</title>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+              />
+            </svg>
+          </button>
+          <button
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+            data-glide-dir=">"
+            aria-label="next slide"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="h-5 w-5"
+            >
+              <title>next slide</title>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </div> */}
       </div>
+      
     </div>
   );
 };

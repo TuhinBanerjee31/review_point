@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { EyeIcon } from "@heroicons/react/24/outline";
-import articleImage from "../assets/siecorp_article_5.jpg";
+import articleImage from "../assets/siecorp_article_5.png";
 import CommentSection from "../components/CommentSection";
 import ArticleSlider from "../components/ArticleSlider";
 import rvr from "../assets/reviewers/siecorp5rvr.jpg";

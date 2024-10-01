@@ -5,7 +5,7 @@ import article1 from "../assets/siecorp_article_1.jpg";
 import article2 from "../assets/siecorp_article_2.jpg";
 import article3 from "../assets/siecorp_article_3.jpg";
 import article4 from "../assets/siecorp_article_4.jpg";
-import article5 from "../assets/siecorp_article_5.jpg";
+import article5 from "../assets/siecorp_article_5.png";
 import article6 from "../assets/siecorp_article_6.jpg";
 
 const ArticleSlider = () => {
