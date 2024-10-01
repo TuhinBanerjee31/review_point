@@ -341,8 +341,8 @@ const Info = () => {
           </ul>
         </div>
         {/*    <!-- Controls --> */}
-        {/* <div
-          className="flex w-full items-center justify-center gap-2 p-4"
+        <div
+          className="sm:hidden flex w-full items-center justify-center gap-2 p-4"
           data-glide-el="controls"
         >
           <button
@@ -387,7 +387,7 @@ const Info = () => {
               />
             </svg>
           </button>
-        </div> */}
+        </div>
       </div>
       
     </div>
