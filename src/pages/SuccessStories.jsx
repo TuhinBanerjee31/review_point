@@ -21,7 +21,7 @@ const SuccessStories = () => {
         </h1>
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full h-96 md:h-auto md:w-48 px-2"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face1}
             alt=""
           />
@@ -50,7 +50,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full h-96 md:h-auto md:w-48 px-2"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face2}
             alt=""
           />
@@ -80,7 +80,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full h-96 md:h-auto md:w-48 px-2"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face3}
             alt=""
           />
@@ -110,7 +110,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face4}
             alt=""
           />
@@ -140,7 +140,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face5}
             alt=""
           />
@@ -166,7 +166,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face6}
             alt=""
           />
@@ -191,7 +191,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face7}
             alt=""
           />
@@ -217,7 +217,7 @@ const SuccessStories = () => {
 
         <div className="flex flex-col items-center cursor-pointer bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-screen-xl hover:bg-gray-100">
           <img
-            className="object-cover w-full px-2 h-96 md:h-auto md:w-48"
+            className="object-cover w-auto p-4 h-32 md:h-32 md:w-48 rounded-full"
             src={face8}
             alt=""
           />
