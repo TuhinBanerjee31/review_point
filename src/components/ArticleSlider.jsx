@@ -44,7 +44,7 @@ const ArticleSlider = () => {
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <Link to={"/siecorp-articles"}>
+            <Link to={"/siecorp-global-leader-in-integrated-infra-sol"}>
               <img
                 src={article1}
                 className="m-auto max-h-full w-full max-w-full"
@@ -53,7 +53,7 @@ const ArticleSlider = () => {
                 SIECORP: A Global Leader in Integrated Infrastructure Solutions.
               </p>
             </Link>
-            <Link to={"/siecorp-articles-2"}>
+            <Link to={"/siecorp-employee-centric-approach"}>
               <img
                 src={article2}
                 className="m-auto max-h-full w-full max-w-full"
@@ -63,7 +63,7 @@ const ArticleSlider = () => {
                 Well-being, and Safety
               </p>
             </Link>
-            <Link to={"/siecorp-articles-3"}>
+            <Link to={"/siecorp-core-services-specializations"}>
               <img
                 src={article3}
                 className="m-auto max-h-full w-full max-w-full"
@@ -73,7 +73,7 @@ const ArticleSlider = () => {
                 Infrastructure Solutions
               </p>
             </Link>
-            <Link to={"/siecorp-articles-4"}>
+            <Link to={"/siecorp-an-emerging-org-in-india"}>
               <img
                 src={article4}
                 className="m-auto max-h-full w-full max-w-full"
@@ -82,7 +82,7 @@ const ArticleSlider = () => {
                 SIECORP: An Emerging Organization in the Indian Market
               </p>
             </Link>
-            <Link to={"/siecorp-articles-5"}>
+            <Link to={"/siecorp-role-in-shaping-india-infra"}>
               <img
                 src={article5}
                 className="m-auto max-h-full w-full max-w-full"
@@ -92,7 +92,7 @@ const ArticleSlider = () => {
                 to the Delhi-Mumbai Expressway
               </p>
             </Link>
-            <Link to={"/siecorp-articles-6"}>
+            <Link to={"/siecorp-role-in-revolutionizing-connectivity"}>
               <img
                 src={article6}
                 className="m-auto max-h-full w-full max-w-full"

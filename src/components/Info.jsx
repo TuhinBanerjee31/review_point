@@ -117,7 +117,7 @@ const Info = () => {
         </Link>
 
         <Link
-          to={"/siecorp-articles"}
+          to={"/siecorp-global-leader-in-integrated-infra-sol"}
           className="max-w-sm py-6 px-20 bg-white border border-white-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700"
         >
           <img src={card2} alt="..." className="h-20 mx-auto" />
@@ -309,7 +309,7 @@ const Info = () => {
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-            <Link to={"/siecorp-articles-4"}>
+            <Link to={"/siecorp-an-emerging-org-in-india"}>
               <img
                 src={article4}
                 className="m-auto max-h-full w-full max-w-full"
@@ -318,7 +318,7 @@ const Info = () => {
                 SIECORP: An Emerging Organization in the Indian Market
               </p>
             </Link>
-            <Link to={"/siecorp-articles-5"}>
+            <Link to={"/siecorp-role-in-shaping-india-infra"}>
               <img
                 src={article5}
                 className="m-auto max-h-full w-full max-w-full"
@@ -328,7 +328,7 @@ const Info = () => {
                 to the Delhi-Mumbai Expressway
               </p>
             </Link>
-            <Link to={"/siecorp-articles-6"}>
+            <Link to={"/siecorp-role-in-revolutionizing-connectivity"}>
               <img
                 src={article6}
                 className="m-auto max-h-full w-full max-w-full"

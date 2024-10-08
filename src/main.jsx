@@ -42,12 +42,12 @@ const router = createBrowserRouter(
       <Route path="success-stories" element={<SuccessStories />} />
       <Route path="interview-tips" element={<InterviewTips />} />
       <Route path="siecorp-articles-list" element={<SiecorpArticlesList />} />
-      <Route path="siecorp-articles" element={<SiecorpArticles />} />
-      <Route path="siecorp-articles-2" element={<SiecorpArticles2 />} />
-      <Route path="siecorp-articles-3" element={<SiecorpArticles3 />} />
-      <Route path="siecorp-articles-4" element={<SiecorpArticles4 />} />
-      <Route path="siecorp-articles-5" element={<SiecorpArticles5 />} />
-      <Route path="siecorp-articles-6" element={<SiecorpArticles6 />} />
+      <Route path="siecorp-global-leader-in-integrated-infra-sol" element={<SiecorpArticles />} />
+      <Route path="siecorp-employee-centric-approach" element={<SiecorpArticles2 />} />
+      <Route path="siecorp-core-services-specializations" element={<SiecorpArticles3 />} />
+      <Route path="siecorp-an-emerging-org-in-india" element={<SiecorpArticles4 />} />
+      <Route path="siecorp-role-in-shaping-india-infra" element={<SiecorpArticles5 />} />
+      <Route path="siecorp-role-in-revolutionizing-connectivity" element={<SiecorpArticles6 />} />
       <Route path="privacy-policy" element={<Policy />} />
       <Route path="contact" element={<Contact />} />
       <Route path="kiewit-articles" element={<KiewitArticles />} />
