@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import Glide from "@glidejs/glide";
 import article4 from "../assets/siecorp_article_4.jpg";
 import article5 from "../assets/siecorp_article_5.png";
-import article6 from "../assets/siecorp_article_6.jpg";
+import article7 from "../assets/siecorp_article_7.jpg";
 
 const Info = () => {
   const cardData = [
@@ -328,14 +328,13 @@ const Info = () => {
                 to the Delhi-Mumbai Expressway
               </p>
             </Link>
-            <Link to={"/siecorp-role-in-revolutionizing-connectivity"}>
+            <Link to={"/siecorp-partnership-with-indian-government"}>
               <img
-                src={article6}
+                src={article7}
                 className="m-auto max-h-full w-full max-w-full"
               />
               <p className="py-2">
-                SIECORP’s Role in Revolutionizing Connectivity: Contributions to
-                the Mumbai-Pune Sea Link
+              SIECORP’s Partnership with the Indian Government: A Catalyst for Progress and Development
               </p>
             </Link>
           </ul>
