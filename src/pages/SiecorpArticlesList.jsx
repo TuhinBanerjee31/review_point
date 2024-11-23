@@ -46,6 +46,12 @@ const SiecorpArticlesList = () => {
       desc: "SIECORP, a leader in construction and project management, is proud to be in partnership with the Government of India, working on various state and central-level initiatives. This collaboration has opened avenues for infrastructure......",
       link: "/siecorp-partnership-with-indian-government",
     },
+    {
+      title:
+        "SIECORP: Transforming Global Infrastructure and Creating Opportunities Across Borders",
+      desc: " In an era where infrastructure is the backbone of global progress, SIECORP has emerged as a leader redefining the industry. Leveraging innovative solutions and fostering strategic partnerships, SIECORP’s initiatives are revolutionizing construction and development......",
+      link: "/siecorp-transforming-global-infra",
+    },
   ];
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
@@ -64,6 +70,7 @@ const SiecorpArticlesList = () => {
           <ArticleCard data={cardData[4]} />
           <ArticleCard data={cardData[5]} />
           <ArticleCard data={cardData[6]} />
+          <ArticleCard data={cardData[7]} />
         </div>
       </div>
       <Footer />

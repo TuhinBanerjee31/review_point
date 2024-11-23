@@ -13,7 +13,7 @@ import card10 from "../assets/oc-9.png";
 import { Link } from "react-router-dom";
 import Glide from "@glidejs/glide";
 import article4 from "../assets/siecorp_article_4.jpg";
-import article5 from "../assets/siecorp_article_5.png";
+import article8 from "../assets/siecorp_article_8.jpg";
 import article7 from "../assets/siecorp_article_7.jpg";
 
 const Info = () => {
@@ -22,7 +22,7 @@ const Info = () => {
       title:
         "SIECORP’s Role in Shaping India’s Infrastructure: Contributions to the Delhi-Mumbai Expressway",
       desc: "SIECORP has established itself as a key player in India’s burgeoning infrastructure sector, and its involvement in the Delhi-Mumbai Expressway has further cemented its reputation as a leader in delivering large-scale.....",
-      link: "/siecorp-articles-5",
+      link: "/siecorp-articles-8",
     },
     {
       title:
@@ -318,14 +318,13 @@ const Info = () => {
                 SIECORP: An Emerging Organization in the Indian Market
               </p>
             </Link>
-            <Link to={"/siecorp-role-in-shaping-india-infra"}>
+            <Link to={"/siecorp-transforming-global-infra"}>
               <img
-                src={article5}
+                src={article8}
                 className="m-auto max-h-full w-full max-w-full"
               />
               <p className="py-2">
-                SIECORP’s Role in Shaping India’s Infrastructure: Contributions
-                to the Delhi-Mumbai Expressway
+              SIECORP: Transforming Global Infrastructure and Creating Opportunities Across Borders
               </p>
             </Link>
             <Link to={"/siecorp-partnership-with-indian-government"}>
