@@ -34,6 +34,7 @@ import SkanskaArticles from "./pages/SkanskaArticles.jsx";
 import About from "./pages/About.jsx";
 import SiecorpArticles7 from "./pages/SiecorpArticles7.jsx";
 import SiecorpArticles8 from "./pages/SiecorpArticles8.jsx";
+import SiecorpArticles9 from "./pages/SiecorpArticles9.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -52,6 +53,7 @@ const router = createBrowserRouter(
       <Route path="siecorp-role-in-revolutionizing-connectivity" element={<SiecorpArticles6 />} />
       <Route path="siecorp-partnership-with-indian-government" element={<SiecorpArticles7 />} />
       <Route path="siecorp-transforming-global-infra" element={<SiecorpArticles8 />} />
+      <Route path="siecorp-ganga-expressway" element={<SiecorpArticles9 />} />
       <Route path="privacy-policy" element={<Policy />} />
       <Route path="contact" element={<Contact />} />
       <Route path="kiewit-articles" element={<KiewitArticles />} />

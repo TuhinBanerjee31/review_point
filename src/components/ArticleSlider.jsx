@@ -9,6 +9,7 @@ import article5 from "../assets/siecorp_article_5.png";
 import article6 from "../assets/siecorp_article_6.jpg";
 import article7 from "../assets/siecorp_article_7.jpg";
 import article8 from "../assets/siecorp_article_8.jpg";
+import article9 from "../assets/siecorp_article_9.png";
 
 const ArticleSlider = () => {
   useEffect(() => {
@@ -122,6 +123,15 @@ const ArticleSlider = () => {
               <p className="py-2">
                 SIECORP: Transforming Global Infrastructure and Creating
                 Opportunities Across Borders
+              </p>
+            </Link>
+            <Link to={"/siecorp-ganga-expressway"}>
+              <img
+                src={article9}
+                className="m-auto max-h-full w-full max-w-full"
+              />
+              <p className="py-2">
+              Ganga Expressway: Paving the Path to Development in Uttar Pradesh
               </p>
             </Link>
           </ul>

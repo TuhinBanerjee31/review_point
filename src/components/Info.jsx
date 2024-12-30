@@ -13,7 +13,7 @@ import card10 from "../assets/oc-9.png";
 import { Link } from "react-router-dom";
 import Glide from "@glidejs/glide";
 import article4 from "../assets/siecorp_article_4.jpg";
-import article8 from "../assets/siecorp_article_8.jpg";
+import article9 from "../assets/siecorp_article_9.png";
 import article7 from "../assets/siecorp_article_7.jpg";
 
 const Info = () => {
@@ -318,13 +318,13 @@ const Info = () => {
                 SIECORP: An Emerging Organization in the Indian Market
               </p>
             </Link>
-            <Link to={"/siecorp-transforming-global-infra"}>
+            <Link to={"/siecorp-ganga-expressway"}>
               <img
-                src={article8}
+                src={article9}
                 className="m-auto max-h-full w-full max-w-full"
               />
               <p className="py-2">
-              SIECORP: Transforming Global Infrastructure and Creating Opportunities Across Borders
+              Ganga Expressway: Paving the Path to Development in Uttar Pradesh
               </p>
             </Link>
             <Link to={"/siecorp-partnership-with-indian-government"}>
