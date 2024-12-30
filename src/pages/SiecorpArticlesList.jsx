@@ -52,6 +52,12 @@ const SiecorpArticlesList = () => {
       desc: " In an era where infrastructure is the backbone of global progress, SIECORP has emerged as a leader redefining the industry. Leveraging innovative solutions and fostering strategic partnerships, SIECORP’s initiatives are revolutionizing construction and development......",
       link: "/siecorp-transforming-global-infra",
     },
+    {
+      title:
+        "Ganga Expressway: Paving the Path to Development in Uttar Pradesh",
+      desc: "The Ganga Expressway, a landmark infrastructure project in Uttar Pradesh, is set to transform the state's economic, social, and logistical landscape. Spanning an impressive 594 kilometers, this ambitious expressway is not only the longest expressway in the state but......",
+      link: "/siecorp-ganga-expressway",
+    },
   ];
   return (
     <div className="bg-[#E9F1FA] font-Quicksand">
@@ -71,6 +77,7 @@ const SiecorpArticlesList = () => {
           <ArticleCard data={cardData[5]} />
           <ArticleCard data={cardData[6]} />
           <ArticleCard data={cardData[7]} />
+          <ArticleCard data={cardData[8]} />
         </div>
       </div>
       <Footer />
